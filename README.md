@@ -15,5 +15,7 @@ The four pillars of OOPS are :
 
 For function overriding , we need to have a parent-child relationship... , in overriding everything is same , function name and its signature,.. but in Function Overloading, in this function name is same but the signature is different...
    
-5) Abstraction : Hiding the complicated details of the program   
+5) Abstraction : Hiding the complicated details of the program   ..
+
+   When we use inheritance, we use extends keyword BUT when we use interface, we use Implements keyword..
 

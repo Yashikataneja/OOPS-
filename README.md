@@ -19,3 +19,115 @@ For function overriding , we need to have a parent-child relationship... , in ov
 
    When we use inheritance, we use extends keyword BUT when we use interface, we use Implements keyword..
 
+   PRIVATE AND PROTECTED ACCESS MODIFIERS CAN'T BE ACCESS AT TOP LEVEL IN JAVA CLASSES
+   default and public can be access at top level in java classes..
+
+   THE OTHER NAME OF default is package private.
+
+   There are 4 access modifiers :
+   1) public
+   2) private
+   3) protected
+   4) default
+  
+      this keyword is used to access the current object or class..
+  
+      OBJECTS ALWAYS CREATE AT RUNTIME!!!! 
+
+      final keyword
+
+      PARENT CLASS CAN BE STORE THE REFERNCE OF THE CHILD CLASS.
+      ya child --- child (khud ka!) ya ancestor ka refernce store krega!
+      
+      child class can'be be store the refernce of parent!
+      siblings can't be store the refernce of parent !
+  
+      ONLY parent ---- child relationship!
+  
+      if CHILD REFERNCE IS BEING STORED BY PARENT OBJECT VARIABLE , THIS CONCECPT IS CALLED AS UPCASTING : CHILD KA REFERNCE PARENT NE STORE KARLIAAAA!
+  
+      DOWNCASTING : IF CHILD IS ASKING BACK HIS REFERNCE FROM PARENT CLASS, IS CALLED DOWNCASTING.
+      wE CANT'T WRITE IT IMPLICITLY, WE HAVE TO PERFORM IT EXPLICITLY OR MANUALLY :
+      example : Mango p = (Mango)a; (downcasting)
+  
+      INSTANCE OF OPERATOR 
+  
+      APPLE IS FATHER AND BANAANA AND KIWI ARE THEIR OBJECTS.
+  
+      SIBLINGS CAN'T STORE THEIR REFERNCE..
+
+      Apple x=new Apple();
+      Banana y=new banana();
+      Apple z=new Banana();
+      Apple a = new kiwi();
+
+      CLASSCAST EXCEPTION OCCURS WHEN WE TRY TO CONVERT THE WRONG DATA TYPE.
+      TO PREVENT FROM CLASSCAST EXCEPTION, USE INSTANCE OF KEYWORD!!!
+
+      if(x instanceof Kiwi) : means jo x ne store kiya hai , kya woh kiwi ek descentdents mein ata hai??
+
+      A ClassCastException in Java is a RuntimeException that occurs when an attempt is made to cast an object to a type (class or interface) of which it is not an instance.       This means the object does not inherently possess the characteristics or methods of the target type. 
+
+      When we inherit any specific property from our parent class,
+
+      Dynamic Binding (Run-time Binding)
+
+Binding means linking a method call to the method code.
+
+Dynamic Binding happens at run-time, not compile-time.
+
+It is also called late binding.
+
+Mainly comes into play with method overriding in inheritance + polymorphism.
+
+ Overriding
+
+Method overriding means:
+
+A child class provides its own implementation of a method that is already defined in the parent class.
+
+The method name, return type, and parameters must be the same.
+
+Decided at run-time (which version of the method runs depends on the actual object).
+
+ How Dynamic Binding Works with Overriding
+
+If a parent class reference points to a child class object,
+
+the child’s overridden method will be called at run-time (not the parent’s version).
+
+ Example in Java:
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();   // parent reference, child object
+        a.sound();              // Output: Dog barks
+    }
+}
+
+🔹 Explanation
+
+At compile-time, Java sees a as type Animal.
+
+At run-time, a actually refers to a Dog object.
+
+So Dog’s version of sound() is called.
+
+This is dynamic binding (run-time polymorphism).
+
+✅ Key Point:
+Dynamic binding ensures flexibility and extensibility. You can write code that works on parent references but actually executes child implementations depending on the object at runtime.
+

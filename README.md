@@ -24,11 +24,33 @@ For function overriding , we need to have a parent-child relationship... , in ov
 
    THE OTHER NAME OF default is package private.
 
+   (jaroori nahi haike jab hum kuj mat likhe to default he aye, har case mei aisa jaroori nahi hai !)
+
+   ACCESS MODIFIERS : (RESTRICTIONS LAGA SAKTE HAI VISIBILITY KE LIYE , KON ACCESS KRRA H AUR KAHA SE ACCESS KRRAA HAI !)
+   
+ specifiers and modifiers are the same.
+
    There are 4 access modifiers :
-   1) public
-   2) private
-   3) protected
-   4) default
+   1) public : CAN ACCESS ANYWHERE 
+   2) private : ONLY KHUD KI CLASS ! SAME CLASS
+   3) protected : CHILD CLASS KAHI SE BHI ACCESS KR SAKTI HAI ! (NON CHILD CLASS HAI TOH SIRF WITHIN THE PACKAGE HE KAR SAKTI HAI !) NON CHILD CLASS
+    PACKAGE KE ANDAR EH HONI CHAHIYE..
+   5) default / friendly / package-private! : SIRF PACKAGE KE ANDAR SE, DEFAULT PACKAGE KE BAHAR JANE HE NAHI DETA! PACKAGE SE BAHAR KOI BHI ACCESS NAHI KAR SAKTA
+
+      PACKAGE : It is a file directory in the system. in which we can make grouping of classes so that we can easily differentiate the files and folders
+
+      syntax of making packages in java :
+      (package movies;) (package java;) 
+
+      desktop --- > folder (this folder is a kind of package in java!)---> level 1 ( this level 1 is a sub package in folder)
+      
+  
+      NON ACCESS SPECIFIERS :
+      1) STATIC
+      2) fiNAL
+      3) TRANSIENT
+      4) VOLATILE
+      5) SYNCHRONIZED
   
       this keyword is used to access the current object or class..
   

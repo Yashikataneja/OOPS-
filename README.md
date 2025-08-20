@@ -166,6 +166,45 @@ override means we can't redefine!
 if i declare any class final, we can't extends it , if we declare any method final, then we can't override it, if i declare any variable final, we can't change it!
 WE CAN'T DECLARE ANY CONSTRUCTOR FINAL !!
 
+class Test{
+      public static void main(String[]args){
+                 Abc.g();
+                 Abc.f();
+                abc a= new abc();
+                  a.f(); (//to access the f method!
+
+TO CALL NON STATIC METHOD FROM STATIC METHOD, WE NEED TO MAKE OBJECT.
+
+STATIC TO STATIC override nahi hoga.
+
+non-static ko static nahi kr sakta and vice versa.
+
+Static methods can't be Overridden..! They are hidden!
+Overriding means redefining but redefining doesnot mean overriding..!
+In static hiding is done.
+In non static , method overriding is done.
+
+CHILD'S REFERNCE IS STORING IN PARENT CLASS VAR IS CALLED UPCASTING.
+
+class Test{
+psvm---(){
+P a =new B();
+a.set();
+
+class P{
+static void get(){
+So[n("Salman");
+}
+
+void set(){
+solmn("kareena")
+}
+class B extends P {
+ static void get(){
+ =====================================
+
+ this means object, we can't write this in static method!
+
 
 
 

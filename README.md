@@ -43,6 +43,14 @@ For function overriding , we need to have a parent-child relationship... , in ov
       (package movies;) (package java;) 
 
       desktop --- > folder (this folder is a kind of package in java!)---> level 1 ( this level 1 is a sub package in folder)
+
+      IN LAW OF INHERITANCE, EVERYTHING IS ACCESSIBLE BUT NOT PRIVATE.
+      PROTECTED SAME PACKAGE SE ACCESS KAR SAKTA HAI AUR DEFAULT BHI...
+       (different package se nahi kar sakta!)
+      PUBLIC ANYWHHERE ACCESS KAR SAKTA HAI!
+
+      (PACKAGE KA NAAM NAHI LIKHOGE TO WOH DEFAULT PACKAGE HE HAI!)
+      
       
   
       NON ACCESS SPECIFIERS :
@@ -157,4 +165,7 @@ override means we can't redefine!
 
 if i declare any class final, we can't extends it , if we declare any method final, then we can't override it, if i declare any variable final, we can't change it!
 WE CAN'T DECLARE ANY CONSTRUCTOR FINAL !!
+
+
+
 

@@ -131,3 +131,8 @@ This is dynamic binding (run-time polymorphism).
 ✅ Key Point:
 Dynamic binding ensures flexibility and extensibility. You can write code that works on parent references but actually executes child implementations depending on the object at runtime.
 
+override means we can't redefine! 
+
+if i declare any class final, we can't extends it , if we declare any method final, then we can't override it, if i declare any variable final, we can't change it!
+WE CAN'T DECLARE ANY CONSTRUCTOR FINAL !!
+

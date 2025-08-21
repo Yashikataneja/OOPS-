@@ -205,6 +205,15 @@ class B extends P {
 
  this means object, we can't write this in static method!
 
+ MEMORY ALLOCATION OF STATIC CAN BE DONE ONLY ONCE.. AND IT IS DONE WHEN THE CLASS IS LOAD..
+ Some classes have static block too.
+
+ when class is load, then 
+
+ static block mein non static kabhi nahi chalta, it will give error.
+
+
+
 
 
 

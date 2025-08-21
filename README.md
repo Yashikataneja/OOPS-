@@ -232,5 +232,9 @@ for static method, we don't need to acquire the object, it is called without it.
 
 non primitive store the reference or address,
 
+Array different data type can't be convert into another different data type..
+They should be of same data type.
+
+` 
 
 

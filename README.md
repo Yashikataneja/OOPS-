@@ -19,6 +19,12 @@ For function overriding , we need to have a parent-child relationship... , in ov
 
    When we use inheritance, we use extends keyword BUT when we use interface, we use Implements keyword..
 
+IN CONSTRUCTORS, THE INSTANCE BLOCKS ARE EXECUTED BUT IN GENERAL, 
+STATIC VARIABLES AND STATIC BLOCKS SIRF EK HE BAR CHALTE HAINNNN, WHEN THE CLASS LOADS.
+
+LOCAL VARIABLES WOH HOTE HAIN JO BLOCK KE ANDAR DECLARE HOTE HAINNN..
+INSTANCE VARIABLES BLOCKS KE BAAHR HOTE HAIN PR CLASS KE ANDAR.....
+
    PRIVATE AND PROTECTED ACCESS MODIFIERS CAN'T BE ACCESS AT TOP LEVEL IN JAVA CLASSES
    default and public can be access at top level in java classes..
 
@@ -212,8 +218,19 @@ class B extends P {
 
  static block mein non static kabhi nahi chalta, it will give error.
 
+=================================================================================================================================================================
 
+ACCESS MODIFIERS : 
 
+WITH CLASS, WE USE ALWAYS PUBLIC AUR DEFAULT ACCESS MODIFIER, 
+AGAR HUJ KISI CLASS KO PRIVATE BNA DENGE, TOH WOH VISIBLE HE NAHI KREGIIIIII.... TO ALWAYSS MAKE IT PUBLIC AUR DEFAULT...
+
+If i want to create only one object of private class constructor , that class is called as singleton class.
+SINGLETON DESIGN PATTERN :
+
+for static method, we don't need to acquire the object, it is called without it.
+
+non primitive store the reference or address,
 
 
 
